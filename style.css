@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-image:linear-gradient(to right, #36a1d6, #a2d5ee) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", system-ui;
+
+}
+
+.container{
+    width: 800px ;
+    height: auto;
+    margin: auto auto;
+    border: 1px solid #ddd;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+h1{
+    color: #04202e;
+    font-size: 35px;
+}
+input[type="text"]{
+    width: 70%;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 20px auto 50px;
+}
+
+
+.psw-content{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+   
+}
+.pswd-choice{
+    margin: 10px auto 25px;
+    font-size: 18px;
+    color: #063e5a;
+}
+.pswd-choice input{
+    accent-color: #063e5a;
+    cursor: pointer;
+    transform: scale(1.5);
+
+}
+.pswd-choice label{
+   
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.buttons button{
+    padding: 8px 25px ;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Cardo", serif;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #063e5a;
+    color: #fff;
+    cursor: pointer;
+
+}
+.buttons button:hover{
+
+}
+@media (max-width:768px) {
+    .psw-content{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between ;
+        align-items: center;
+        flex-wrap: wrap;
+       
+    }
+    .pswd-choice{
+        flex: 0 0 40%;
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
