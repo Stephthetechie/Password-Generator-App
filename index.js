@@ -60,7 +60,13 @@ symbol.addEventListener('click', ()=>{
      includeSymbol = symbol.checked})
 
 
-reset = ()=> document.getElementById('inputBox').value = '';
+reset = ()=> {
+    document.getElementById('inputBox').value = '';
+    upperCase.checked = false;
+    lowerCase.checked = false;
+    symbol.checked = false;
+    number.checked = false;
+}
 
 let input = document.getElementById('inputBox')
 let passwordBtn = document.getElementById('pswBtn')
